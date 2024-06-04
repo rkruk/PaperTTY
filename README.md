@@ -28,7 +28,7 @@ PaperTTY is currently packaged using Poetry, however it can be installed via pip
 
 **Then, you also need some system dependencies:**
 
-- `sudo apt install python3-venv python3-pip libopenjp2-7 libtiff5 libjpeg-dev`
+- `sudo apt install python3-venv python3-pip libopenjp2-7 libtiff5-dev libjpeg-dev libfreetype-dev`
 
 ### Install with pip to virtualenv
 
@@ -427,6 +427,9 @@ Option | Description | Default
 `--spacing` | Set line spacing | `0` 
 `--scrub` | Apply scrub when starting | disabled
 `--autofit` | Try to automatically set terminal rows/cols for the font | disabled
+`--vcom` | Set the VCOM value of the panel. Entered as positive value x 1000. eg. 1460 = -1.46V | *no default*
+`--disable_a2` | Disable fast A2 panel refresh for black and white images | disabled
+`--disable_1bpp` | Disable fast 1bpp mode | disabled
 
 
 ```sh
